@@ -22,10 +22,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        addData("12","Abhay","121212","abhay@gmail.com","sdf sdfg" , " sdfsfdef" , " asfd", " tdhd");
     }
 
     // Method to add data to Firebase Database
-    //
+
     private void addData(String id, String name, String mobile , String email, String des, String reportingTo, String DOJ, String rights){
         mRef = FirebaseDatabase.getInstance().getReference("employees");
 
